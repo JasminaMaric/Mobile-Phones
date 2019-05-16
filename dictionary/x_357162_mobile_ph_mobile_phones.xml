@@ -11,6 +11,7 @@
         <element attributes="edge_encryption_enabled=true" label="Phone Brand" mandatory="true" max_length="125" name="u_phone_brand" type="string"/>
         <element attributes="edge_encryption_enabled=true" choice="1" default="telekom" label="Providers" mandatory="true" max_length="40" name="u_providers" type="string">
             <choice>
+                <element inactive="true" inactive_on_update="true" label="Beotel Net" sequence="0" value="beotel net"/>
                 <element inactive_on_update="false" label="Telekom" sequence="0" value="telekom"/>
                 <element inactive_on_update="false" label="Vip" sequence="1" value="vip"/>
                 <element inactive_on_update="false" label="Orion" sequence="2" value="orion"/>
