@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Mobile Phones" max_length="40" name="x_357162_mobile_ph_mobile_phones" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Supply" mandatory="true" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="New Choice" max_length="40" name="u_choice_2" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Choice 1" sequence="0" value="Choice 1"/>
+                <element inactive_on_update="false" label="Choice 2" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" label="Choice 3" sequence="2" value="Choice 3"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Phone Brand" mandatory="true" max_length="125" name="u_phone_brand" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="telekom" label="Providers" mandatory="true" max_length="40" name="u_providers" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Telekom" sequence="0" value="telekom"/>
+                <element inactive_on_update="false" label="Vip" sequence="1" value="vip"/>
+                <element inactive_on_update="false" label="Orion" sequence="2" value="orion"/>
+                <element inactive_on_update="false" label="SBB" sequence="3" value="sbb"/>
+            </choice>
+        </element>
+        <element default="1" label="Stock" mandatory="true" max_length="40" name="u_stock" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="yes" label="Supply" mandatory="true" max_length="40" name="u_supply" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+    </element>
+</database>
